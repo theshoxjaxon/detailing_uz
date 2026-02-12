@@ -1,8 +1,17 @@
 {
   "header": {
+    "work": "Portfolio",
+    "company": "Company",
+    "promo": "Deals",
+    "contacts": "Contacts",
     "services": "Services",
-    "portfolio": "Our Work",
-    "about": "About",
-    "book": "Book Now"
+    "login": "Login / Register",
+    "phone": "+44 20 7123-4567"
+  },
+  "hero": {
+    "title_top": "Premium",
+    "title_bottom": "Detailing",
+    "description": "The ultimate care for your luxury vehicle. Professional ceramic coating, detailing, and maintenance.",
+    "btn_book": "Book Service"
   }
 }

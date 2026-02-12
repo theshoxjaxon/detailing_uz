@@ -1,23 +1,26 @@
 import Header from "@/components/shared/Header";
 import { getDictionary } from "@/lib/dictionaries";
-interface PublicLayoutProps {
-  children: React.ReactNode;
-  params: Promise<{ lang: string }>;
-}
+import "@/app/globals.css";
 
 export default async function PublicLayout({
   children,
   params,
-}: PublicLayoutProps) {
+}: {
+  children: React.ReactNode;
+  params: Promise<{ lang: string }>;
+}) {
   const { lang } = await params;
-
-  const dict = await getDictionary(lang as "en" | "ru" | "uz");
+  const dict = await getDictionary(lang);
 
   return (
-    <>
-      <Header dict={dict.header} lang={lang} />
-
-      <main className="pt-20">{children}</main>
-    </>
+    <html lang={lang}>
+      <body className="bg-[#1E1E1E] text-white antialiased">
+        {/* FIX: Use .header instead of .head */}
+        <Header dict={dict.header} lang={lang} />
+        <main className="pt-20">
+          {children}
+        </main>
+      </body>
+    </html>
   );
 }

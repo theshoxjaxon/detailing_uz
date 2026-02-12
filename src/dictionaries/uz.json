@@ -1,8 +1,17 @@
 {
   "header": {
+    "work": "Ishlarimiz",
+    "company": "Kompaniya",
+    "promo": "Aksiyalar",
+    "contacts": "Kontaktlar",
     "services": "Xizmatlar",
-    "portfolio": "Ishlarimiz",
-    "about": "Biz haqimizda",
-    "book": "Band qilish"
+    "login": "Kirish / Ro'yxatdan o'tish",
+    "phone": "+998 90 123-45-67"
+  },
+  "hero": {
+    "title_top": "Premium",
+    "title_bottom": "Detailing",
+    "description": "Avtomobilingiz uchun mukammal parvarish. Professional keramik qoplama, detailing va texnik xizmat ko'rsatish.",
+    "btn_book": "Band qilish"
   }
 }
